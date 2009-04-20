@@ -1,0 +1,77 @@
+form: 
+  id: contact
+  action: /form.cgi
+  method: post
+  multipart: false
+
+inputs: 
+  - 
+    label: お名前
+    type: text
+    name: namae
+    class: [input_text require]
+    size: 20
+    maxlength: 20
+  
+  - 
+    label: フリガナ
+    type: text
+    name: furigana
+    class: [input_text require katakana]
+    size: 20
+    maxlength: 20
+  
+  - 
+    label: メール
+    type: text
+    name: email
+    class: [input_text require email]
+
+  -
+    label: パスワード
+    type: password
+    name: password
+    class: [input_text require alpha]
+
+  -
+    label: パスワード(再入力)
+    type: password
+    name: retype_password
+    class: [input_text require]
+    match: password
+  
+  - 
+    label: TEL
+    type: text
+    name: tel
+    class: [require tel]
+  
+  - 
+    label: お問い合わせ種別
+    type: selectbox
+    name: category
+    blank: true
+    values: [お見積り ご質問]
+
+  - 
+    label: 性別
+    type: radio
+    name: sex
+    values: [男性 女性]
+  
+  - 
+    label: きっかけ
+    type: checkbox
+    name: known
+    values: [WEB 知人 その他]
+
+  - 
+    type: hidden
+    name: test
+    value: test
+
+  - 
+    type: image
+    name: submit
+    src: 
+    value: 送信する

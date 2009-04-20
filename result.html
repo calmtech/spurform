@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+
+<head>
+<meta http-equiv="content-type" content="text/html;charset=Shift_JIS" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="imagetoolbar" content="no" />
+
+<title>CalmTech | カームテック</title>
+
+<meta content="CalmTch" name="Author" />
+<meta content="" name="description" />
+<meta content="" name="keywords" />
+
+<link rel="stylesheet" href="stylesheets/default.css" type="text/css" />
+
+<link rel="start" href="http://www.calmtech.net/" title="CalmTech" />
+<link rel="contents" href="index.html" title="目次" />
+<link rev="made" href="mailto:info@calmtech.net" />
+
+</head>
+
+<body>
+<form multipart="false" method="post" action="/form.cgi" id="contact">
+<label for="contact_namae">お名前</label>
+<input name="namae" maxlength="20" size="20" class="input_text require" id="contact_namae" type="text" /><br />
+<label for="contact_furigana">フリガナ</label>
+<input name="furigana" maxlength="20" size="20" class="input_text require katakana" id="contact_furigana" type="text" /><br />
+<label for="contact_email">メール</label>
+<input name="email" class="input_text require email" id="contact_email" type="text" /><br />
+<label for="contact_password">パスワード</label>
+<input name="password" class="input_text require alpha" id="contact_password" type="password" /><br />
+<label for="contact_retype_password">パスワード(再入力)</label>
+<input name="retype_password" class="input_text require" id="contact_retype_password" type="password" match="password" /><br />
+<label for="contact_tel">TEL</label>
+<input name="tel" class="require tel" id="contact_tel" type="text" /><br />
+
+
+
+
+<input name="test" id="contact_test" value="test" type="hidden" /><br />
+
+<input name="submit" src="" id="contact_submit" value="送信する" type="image" /><br />
+</form>
+</body>
+
+</html> 
